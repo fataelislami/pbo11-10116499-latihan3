@@ -11,11 +11,11 @@ package latihan.index.nilai;
  * @author fataelislami
  */
 public class Mahasiswa {
-    double quiz,uts,uas,na;
-    char index=0;
-    String keterangan=null;
-    String nama;
-    String nim;
+    private double quiz,uts,uas,na;
+    private char index=0;
+    private String keterangan=null;
+    private String nama;
+    private String nim;
     
     Mahasiswa(String nama,String nim,double quiz,double uts,double uas){
         this.nim=nim;
@@ -24,6 +24,26 @@ public class Mahasiswa {
         this.uts=uts;
         this.uas=uas;
     
+    }
+
+    public double getQuiz() {
+        return quiz;
+    }
+
+    public double getUts() {
+        return uts;
+    }
+
+    public double getUas() {
+        return uas;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    public String getNim() {
+        return nim;
     }
     double getNilaiAkhir(double quiz,double uts,double uas){
         na=(0.2*quiz)+(0.3*uts)+(0.5*uas);
